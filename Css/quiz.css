@@ -60,6 +60,7 @@ button {
 #title {
     height: 20vh;
     margin-top: 5%;
+    text-align: center;
 }
 
 #radio {
@@ -81,19 +82,19 @@ button {
     display: none;
 }
 
-.answer1 {
+.answer0 {
     background-color: #f58549;
 }
 
-.answer2 {
+.answer1 {
     background-color: #ffca3a;
 }
 
-.answer3 {
+.answer2 {
     background-color: #1982c4;
 }
 
-.answer4 {
+.answer3 {
     background-color: #6a4c93;
 }
 
@@ -115,6 +116,16 @@ button {
     justify-content: center;
     flex-direction: column;
     align-items:center; 
+}
+
+#cronometro {
+    position: fixed;
+    padding: 10px 20px;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 20px;
+    top: 2%;
+    right: 2%;
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
