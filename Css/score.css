@@ -55,6 +55,10 @@ td {
     border: 1px solid black;
 }
 
+.hide {
+  visibility: hidden;
+}
+
 @media screen and (min-width: 500px) and (max-width: 768px) {
     html {
       font-size: 20px;

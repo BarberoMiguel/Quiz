@@ -82,10 +82,18 @@ if (document.title == "Geography Quiz") {
         <section>
             <h1>Geography Quiz</h1><br><br><br>
             <p>Click the button to start</p>
-            <a href="./Pages/quiz.html"><img src="./Assets/test-button.png" alt="button"></a>    
+            <a href="./Pages/quiz.html"><img src="./Assets/test-button.png" alt="button"></a>
+            <audio src="./Assets/Musica_Lobby.mp3" autoplay loop controls class="hide">Audio not suported</audio>    
         </section>`;
     main.innerHTML = section;
     document.getElementById("home").appendChild(main);
+    let button = document.querySelector("a");
+    button.addEventListener("mouseover", function() {
+        button.classList.add("pointer");
+    });
+    button.addEventListener("mouseout", function() {
+        button.classList.remove("pointer");
+    });
 }
      
 
@@ -126,6 +134,7 @@ if (document.title == "Geography Quiz1") {
                 </article>
             </form>
             <div id="cronometro">00:00:00</div>
+            <audio src="../Assets/Musica_Lobby.mp3" class="hide" autoplay loop controls>Audio not suported</audio>
         </section>`;
     main1.innerHTML = section1;
     document.getElementById("testPage").appendChild(main1);
@@ -204,10 +213,16 @@ if (document.title == "Geography Quiz1") {
     //inhabilitar las opciones durante 2 segundos para que no se pueda cambiar
     //cambiar los colores para mostrar la respuesta correcta    
     for (let i = 0; i < labelAnswers.length; i++) {
+        labelAnswers[i].addEventListener("mouseover", function() {
+            labelAnswers[i].classList.add("pointer");
+        });
+        labelAnswers[i].addEventListener("mouseout", function() {
+            labelAnswers[i].classList.remove("pointer");
+        });
         labelAnswers[i].addEventListener("click", function(event) {
-            inputAnswers[i].checked = true;
             if (opcionUnica) {
                 opcionUnica= false;
+                inputAnswers[i].checked = true;
                 color();
                 for (let j = 0; j < inputAnswers.length; j++) {
                     inputAnswers[j].disabled = true;
@@ -299,6 +314,7 @@ if (document.title == "Geography Quiz2") {
     }
     section2 += `
         </table>
+        <audio src="../Assets/Musica_Lobby.mp3" class="hide" autoplay loop controls>Audio not suported</audio>
     </section>`;
     main2.innerHTML = section2;
     document.getElementById("solPage").appendChild(main2);
