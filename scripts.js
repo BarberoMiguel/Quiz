@@ -284,6 +284,7 @@ if (document.title == "Geography Quiz1") {
 
 if (document.title == "Geography Quiz2") {
     //recupero parámetros
+    debugger
     let variableRecuperada = localStorage.getItem("scoreBoard");
     variableRecuperada = JSON.parse(variableRecuperada);
     let scoreArray1 = localStorage.getItem("lastUser");
