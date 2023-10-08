@@ -266,11 +266,11 @@ if (document.title == "Geography Quiz1") {
     formTest.addEventListener("submit", function(event) {
         //recupero el scoreBoard
         let variableRecuperada = localStorage.getItem("scoreBoard");
-        if (variableRecuperada = "null") {
+        if (variableRecuperada == null) {
             variableRecuperada = [];
         } else {
             variableRecuperada = JSON.parse(variableRecuperada);
-        }
+        };
 
         //preparo la variable para introducir y la introduzco.
         scoreArray.push(score);
