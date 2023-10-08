@@ -57,9 +57,14 @@ button {
     align-items: center;
 }
 
+#titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #title {
     height: 20vh;
-    margin-top: 5%;
     text-align: center;
     z-index: 2;
 }

@@ -115,7 +115,9 @@ if (document.title == "Geography Quiz1") {
         <section>
             <form action="./score.html" method="get" id="formTest">
                 <article id="test">
+                    <section id="titleContainer">
                     <h2 id="title">${quiz[index].label}</h2>
+                    </section>
                     <article id="radio">
                         <label for="answer1" class="answer0" id="a0">${quiz[index].answer1}</label>
                         <input type="radio" name="answer" id="answer1">
@@ -322,7 +324,7 @@ if (document.title == "Geography Quiz2") {
     </section>`;
     main2.innerHTML = section2;
     document.getElementById("solPage").appendChild(main2);
-    debugger
+
     //cambio texto e imagen según la puntuación
     let result = document.getElementById("result");
     let imgUrl = document.getElementById("imageFinal");
