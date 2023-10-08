@@ -58,15 +58,17 @@ button {
 }
 
 #titleContainer {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 20vh;
 }
 
 #title {
-    height: 20vh;
     text-align: center;
     z-index: 2;
+    margin-top: 15%;
 }
 
 #radio {
@@ -74,6 +76,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10vh;
 }
 
 #radio label {
@@ -153,8 +156,11 @@ button {
       html {
           font-size: 25px;
       }
-      #title {
+      #titleContainer {
         height: 40vh;
+      }
+      #title {
+        margin-top: -10%;
       }
       #radio {
         flex-direction: row;
@@ -172,8 +178,11 @@ button {
       html {
           font-size: 30px;
       }
-      #title {
+      #titleContainer {
         height: 40vh;
+      }
+      #title {
+        margin-top: -10%;
       }
       #radio {
         flex-direction: row;
