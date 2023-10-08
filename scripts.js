@@ -262,10 +262,13 @@ if (document.title == "Geography Quiz1") {
     var control = false;
     let formTest = document.getElementById("formTest");
     formTest.addEventListener("submit", function(event) {
-        localStorage.setItem('scoreBoard', []);
         //recupero el scoreBoard
         let variableRecuperada = localStorage.getItem("scoreBoard");
-        variableRecuperada = JSON.parse(variableRecuperada);
+        if (variableRecuperada = "null") {
+            variableRecuperada = [];
+        } else {
+            variableRecuperada = JSON.parse(variableRecuperada);
+        }
 
         //preparo la variable para introducir y la introduzco.
         scoreArray.push(score);
@@ -284,7 +287,6 @@ if (document.title == "Geography Quiz1") {
 
 if (document.title == "Geography Quiz2") {
     //recupero parámetros
-    debugger
     let variableRecuperada = localStorage.getItem("scoreBoard");
     variableRecuperada = JSON.parse(variableRecuperada);
     let scoreArray1 = localStorage.getItem("lastUser");
