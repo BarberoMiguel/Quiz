@@ -49,6 +49,7 @@ switch (score) {
     case 6:
         result.textContent = "Well done!! You'll do better next Time";
         imgUrl.src = "../Assets/5-6-.png";
+        break;
     case 0:
     case 1:
     case 2:
@@ -56,6 +57,7 @@ switch (score) {
     case 4:
         result.textContent = "Looks like you should study more";
         imgUrl.src = "../Assets/0-4-.png";
+        break;
     default:
         break;
 }
