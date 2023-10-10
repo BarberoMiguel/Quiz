@@ -323,7 +323,7 @@ if (document.title == "Geography Quiz1") {
                 <label for="user" class="par">Name: </label>
                 <input type="text" name="user" id="user" placeholder="Introduce your name"><br><br>
                 <p id="parrafo" class="par"></p>
-                <button type="submit" id="button">Submit</button>
+                <button type="submit" class="button">Submit</button>
             </form> 
         </section>
         <section>
@@ -346,7 +346,7 @@ if (document.title == "Geography Quiz1") {
                 <article id="end">
                     <h2>How did it go?</h2><br>
                     <p>Submit results</p><br>
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="button">Submit</button>
                 </article>
             </form>
             <div id="cronometro">00:00:00</div>
