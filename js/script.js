@@ -261,8 +261,8 @@ if (document.title == "Geography Quiz") {
         <section id="sectionIndex">
             <h1 id="titleIndex">Geography Quiz</h1><br><br><br>
             <p id="pIndex">Click the button to start</p>
-            <a id="aIndex" href="./Pages/quiz.html"><img src="./Assets/test-button.png" alt="button"></a>
-            <audio src="./Assets/Musica_Lobby.mp3" autoplay loop controls class="hide audio">Audio not suported</audio>    
+            <a id="aIndex" href="./Pages/quiz.html"><img src="./assets/test-button.png" alt="button"></a>
+            <audio src="./assets/Musica_Lobby.mp3" autoplay loop controls class="hide audio">Audio not suported</audio>    
         </section>
         <article>
             <p class="mute">Mute</p>
@@ -354,7 +354,7 @@ if (document.title == "Geography Quiz1") {
                 </article>
             </form>
             <div id="cronometro">00:00:00</div>
-            <audio src="../Assets/Musica_Lobby.mp3" class="hide audio" autoplay loop controls>Audio not suported</audio>
+            <audio src="../assets/Musica_Lobby.mp3" class="hide audio" autoplay loop controls>Audio not suported</audio>
         </section>
         <article>
             <p class="mute">Mute</p>
@@ -527,7 +527,7 @@ if (document.title == "Geography Quiz2") {
         <h2 class="score">Well done ${user}!!</h2>
         <h2 class="score">Your score is: ${score} / 10</h2>
         <p id="result">Perfect!!</p>
-        <img src="../Assets/10-.png" alt="image" id="imageFinal">
+        <img src="../assets/10-.png" alt="image" id="imageFinal">
 
         <h2>ScoreBoard</h2>
         <table>
@@ -544,7 +544,7 @@ if (document.title == "Geography Quiz2") {
     }
     section2 += `
         </table>
-        <audio  src="../Assets/Musica_Lobby.mp3" class="hide audio" autoplay loop controls>Audio not suported</audio>
+        <audio  src="../assets/Musica_Lobby.mp3" class="hide audio" autoplay loop controls>Audio not suported</audio>
     </section>
     <aside>
         <a href="../index.html" id="aScore">Play again</a>
@@ -564,12 +564,12 @@ if (document.title == "Geography Quiz2") {
         case 8:
         case 9:
             result.textContent = "Great score!!";
-            imgUrl.src = "../Assets/7-9-.png";
+            imgUrl.src = "../assets/7-9-.png";
             break;
         case 5:
         case 6:
             result.textContent = "Well done!! You'll do better next Time";
-            imgUrl.src = "../Assets/5-6-.png";
+            imgUrl.src = "../assets/5-6-.png";
             break;
         case 0:
         case 1:
@@ -577,7 +577,7 @@ if (document.title == "Geography Quiz2") {
         case 3:
         case 4:
             result.textContent = "Looks like you should study more";
-            imgUrl.src = "../Assets/0-4-.png";
+            imgUrl.src = "../assets/0-4-.png";
             break;
         default:
             break;
