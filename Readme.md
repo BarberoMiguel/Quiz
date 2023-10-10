@@ -8,21 +8,21 @@
 This is a simple web in which you can take a Geography test and see your score afterwards!
 
 First you need to log with a username:
-![Log in](./Assets/Log_in.png  "Log in")
+![Log in](./assets/Log_in.png  "Log in")
 Remember to type a name between 2 and 30 characters.
 
 Second you have to answer 10 Quiz questions:
-![Quiz](./Assets/Quiz.png  "Quiz")
+![Quiz](./assets/Quiz.png  "Quiz")
 Remember! There is only one correct answer!
 
 While you take your test you will listen to some relaxing music as well as be able to see your time: 
 
-![Crono](./Assets/Crono.png  "Crono")
+![Crono](./assets/Crono.png  "Crono")
 
 Last you will be able to see your score and a table with the results of all previous players:
 
-![Score](./Assets/Score.png  "Score")
+![Score](./assets/Score.png  "Score")
 
 <h2> Enjoy! </h2>
 
-You can access the web [here.](https://barberomiguel.github.io/Quiz/)
+You can access the web [here.](https://barberomiguel.github.io/quiz/)
