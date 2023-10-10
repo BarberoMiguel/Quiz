@@ -49,9 +49,222 @@ const quiz = [
     "answer1": "Kenya",
     "answer2": "Nigeria",
     "answer3": "South Africa",
-    "answer4": "Ethiopia"}
+    "answer4": "Ethiopia"},
+    {"label": "What is the capital of Canada?",
+    "answer1": "Vancouver",
+    "answer2": "Toronto",
+    "answer3": "Ottawa",
+    "answer4": "Montreal"},
+    {"label": "Which continent is known as the 'Land Down Under'?",
+    "answer1": "Africa",
+    "answer2": "Australia",
+    "answer3": "South America",
+    "answer4": "Asia"},
+    {"label": "What is the largest island in the world by land area?",
+    "answer1": "Madagascar",
+    "answer2": "Greenland",
+    "answer3": "Borneo",
+    "answer4": "Iceland"},
+    {"label": "What is the highest waterfall in the world?",
+    "answer1": "Angel Falls",
+    "answer2": "Niagara Falls",
+    "answer3": "Victoria Falls",
+    "answer4": "Iguazu Falls"},
+    {"label": "What is the largest country by land area in South America?",
+    "answer1": "Brazil",
+    "answer2": "Argentina",
+    "answer3": "Colombia",
+    "answer4": "Peru"},
+    {"label": "Which river is the longest in Russia and Europe?",
+    "answer1": "Rhine",
+    "answer2": "Danube",
+    "answer3": "Volga",
+    "answer4": "Seine"},
+    {"label": "In which country would you find the Great Barrier Reef?",
+    "answer1": "Thailand",
+    "answer2": "Australia",
+    "answer3": "Indonesia",
+    "answer4": "Fiji"},
+    {"label": "What is the smallest continent?",
+    "answer1": "Asia",
+    "answer2": "Europe",
+    "answer3": "Antarctica",
+    "answer4": "Australia"},
+    {"label": "What is the smallest country in Africa by land area?",
+    "answer1": "Seychelles",
+    "answer2": "Eswatini",
+    "answer3": "Gambia",
+    "answer4": "Djibouti"},
+    {"label": "What is the capital of Australia?",
+    "answer1": "Sydney",
+    "answer2": "Melbourne",
+    "answer3": "Canberra",
+    "answer4": "Brisbane"},
+    {"label": "Which Asian river is often called the 'River of Sorrows'?",
+    "answer1": "Yangtze",
+    "answer2": "Mekong",
+    "answer3": "Yellow River (Huang He)",
+    "answer4": "Indus"},
+    {"label": "What is the largest lake in Africa?",
+    "answer1": "Lake Tanganyika",
+    "answer2": "Lake Malawi",
+    "answer3": "Lake Victoria",
+    "answer4": "Lake Chad"},
+    {"label": "What is the highest mountain in South America?",
+    "answer1": "Mount Aconcagua",
+    "answer2": "Mount Chimborazo",
+    "answer3": "Mount Huascarán",
+    "answer4": "Mount Fitz Roy"},
+    {"label": "Which country is known as the 'Land of the Rising Sun'?",
+    "answer1": "China",
+    "answer2": "South Korea",
+    "answer3": "Japan",
+    "answer4": "Thailand"},
+    {"label": "What is the capital of Brazil?",
+    "answer1": "Rio de Janeiro",
+    "answer2": "Sao Paulo",
+    "answer3": "Brasília",
+    "answer4": "Salvador"},
+    {"label": "Which country is located on the Iberian Peninsula in Europe?",
+    "answer1": "Greece",
+    "answer2": "Italy",
+    "answer3": "Spain",
+    "answer4": "Switzerland"},
+    {"label": "What is the longest river in the United States?",
+    "answer1": "Mississippi River",
+    "answer2": "Missouri River",
+    "answer3": "Colorado River",
+    "answer4": "Ohio River"},
+    {"label": "Which African country is known for its pyramids and the Nile River?",
+    "answer1": "Ethiopia",
+    "answer2": "Sudan",
+    "answer3": "Egypt",
+    "answer4": "Nigeria"},
+    {"label": "Which U.S. state is known as the 'Sunshine State'?",
+    "answer1": "California",
+    "answer2": "Florida",
+    "answer3": "Hawaii",
+    "answer4": "Texas"},
+    {"label": "What is the capital of South Korea?",
+    "answer1": "Seoul",
+    "answer2": "Busan",
+    "answer3": "Incheon",
+    "answer4": "Daegu"},
+    {"label": "In which continent is the Sahara Desert located?",
+    "answer1": "Africa",
+    "answer2": "Asia",
+    "answer3": "South America",
+    "answer4": "Australia"},
+    {"label": "What is the largest country by land area in the world?",
+    "answer1": "Russia",
+    "answer2": "China",
+    "answer3": "United States",
+    "answer4": "Canada"},
+    {"label": "Which ocean is the largest by surface area?",
+    "answer1": "Atlantic Ocean",
+    "answer2": "Indian Ocean",
+    "answer3": "Pacific Ocean",
+    "answer4": "Arctic Ocean"},
+    {"label": "What is the capital of Argentina?",
+    "answer1": "Buenos Aires",
+    "answer2": "Santiago",
+    "answer3": "Montevideo",
+    "answer4": "Asunción"},
+    {"label": "Which mountain range spans from Morocco to Tunisia in North Africa?",
+    "answer1": "Andes",
+    "answer2": "Alps",
+    "answer3": "Atlas Mountains",
+    "answer4": "Himalayas"},
+    {"label": "What is the national flower of Japan?",
+    "answer1": "Lotus",
+    "answer2": "Rose",
+    "answer3": "Cherry Blossom",
+    "answer4": "Orchid"},
+    {"label": "Which river forms the border between the United States and Mexico?",
+    "answer1": "Rio Grande",
+    "answer2": "Colorado River",
+    "answer3": "Mississippi River",
+    "answer4": "Missouri River"},
+    {"label": "What is the largest country in South America by population?",
+    "answer1": "Argentina",
+    "answer2": "Brazil",
+    "answer3": "Colombia",
+    "answer4": "Venezuela"},
+    {"label": "Which European city is known as the 'City of Love'?",
+    "answer1": "Paris",
+    "answer2": "Rome",
+    "answer3": "Vienna",
+    "answer4": "Prague"},
+    {"label": "Which desert is often called the 'Empty Quarter'?",
+    "answer1": "Sahara Desert",
+    "answer2": "Kalahari Desert",
+    "answer3": "Gobi Desert",
+    "answer4": "Rub' al Khali"},
+    {"label": "What is the highest peak in North America?",
+    "answer1": "Mount St. Elias",
+    "answer2": "Mount Logan",
+    "answer3": "Mount McKinley (Denali)",
+    "answer4": "Mount Rainier"},
+    {"label": "What is the capital of South Africa?",
+    "answer1": "Cape Town",
+    "answer2": "Johannesburg",
+    "answer3": "Pretoria",
+    "answer4": "Bloemfontein"},
+    {"label": "What is the capital of Mexico?",
+    "answer1": "Cancún",
+    "answer2": "Monterrey",
+    "answer3": "Mexico City",
+    "answer4": "Guadalajara"},
+    {"label": "Which country is known as the 'Pearl of Africa'?",
+    "answer1": "Kenya",
+    "answer2": "Tanzania",
+    "answer3": "Uganda",
+    "answer4": "Rwanda"},
+    {"label": "What is the longest river in Europe?",
+    "answer1": "Danube",
+    "answer2": "Rhine",
+    "answer3": "Volga",
+    "answer4": "Seine"},
+    {"label": "Which country is known as the 'Land of the Midnight Sun'?",
+    "answer1": "Canada",
+    "answer2": "Sweden",
+    "answer3": "Norway",
+    "answer4": "Russia"},
+    {"label": "What is the largest country by land area in South Asia?",
+    "answer1": "India",
+    "answer2": "Pakistan",
+    "answer3": "Bangladesh",
+    "answer4": "Afghanistan"},
+    {"label": "Which river flows through Budapest, the capital of Hungary?",
+    "answer1": "Rhine",
+    "answer2": "Danube",
+    "answer3": "Elbe",
+    "answer4": "Thames"},
+    {"label": "Which country is known as the 'Cradle of Civilization'?",
+    "answer1": "Greece",
+    "answer2": "Egypt",
+    "answer3": "Iraq",
+    "answer4": "Turkey"},
+    {"label": "What is the highest mountain in Oceania?",
+    "answer1": "Mount Kilimanjaro",
+    "answer2": "Mount Elbrus",
+    "answer3": "Mount Cook",
+    "answer4": "Puncak Jaya"}
 ];
-const answers = ["Paris","Nile","Japan","Africa","Mount Everest","Turkey","Sahara","Canberra","Iceland","South Africa"];
+const answers = ["Paris","Nile","Japan","Africa","Mount Everest","Turkey","Sahara","Canberra","Iceland","South Africa","Ottawa", "Australia", "Greenland", "Angel Falls", "Brazil", "Volga", "Australia", "Australia", "Gambia", "Canberra", "Yellow River (Huang He)", "Lake Victoria", "Mount Aconcagua", "Japan", "Brasília", "Spain", "Mississippi River", "Egypt", "Florida", "Seoul", "Africa", "Russia", "Pacific Ocean", "Buenos Aires", "Atlas Mountains", "Cherry Blossom", "Rio Grande", "Brazil", "Paris", "Rub' al Khali", "Mount McKinley (Denali)", "Pretoria", "Mexico City", "Uganda", "Volga", "Norway", "Afghanistan", "Danube", "Iraq", "Puncak Jaya"];
+
+//elijo 10 preguntas aleatorias
+let preguntasFinal = [];
+let respuestasFinal = [];
+let preguntasTemp = quiz;
+let respuestasTemp = answers;
+for (let i = 0; i < 10; i++) {
+    let num = (Math.floor(Math.random() * preguntasTemp.length-1));
+    preguntasFinal.push(preguntasTemp[num]);
+    respuestasFinal.push(respuestasTemp[num]);
+    preguntasTemp.splice(num, 1);
+    respuestasTemp.splice(num, 1);
+}
 
 //variables de uso interno
 var index = 0;
@@ -78,8 +291,9 @@ function bubbleSort(inputArr) {
 //añadir contenido a la página
 let main1 = document.createElement("main");
 main1.id = "quiz";
-let section1 = `
-    <section id="name">
+let section1 = document.createElement("section");
+section1.innerHTML =`
+    <section id="nombre">
         <h2>Introduce your name to start:</h2> <br>
         <form id="formName">
             <label for="user">Name: </label>
@@ -92,16 +306,16 @@ let section1 = `
         <form action="./score.html" method="get" id="formTest">
             <article id="test">
                 <section id="titleContainer">
-                <h2 id="title">${quiz[index].label}</h2>
+                <h2 id="title">${preguntasFinal[index].label}</h2>
                 </section>
                 <article id="radio">
-                    <label for="answer1" class="answer0" id="a0">${quiz[index].answer1}</label>
+                    <label for="answer1" class="answer0" id="a0">${preguntasFinal[index].answer1}</label>
                     <input type="radio" name="answer" id="answer1">
-                    <label for="answer2" class="answer1" id="a1">${quiz[index].answer2}</label>
+                    <label for="answer2" class="answer1" id="a1">${preguntasFinal[index].answer2}</label>
                     <input type="radio" name="answer" id="answer2">
-                    <label for="answer3" class="answer2" id="a2">${quiz[index].answer3}</label>
+                    <label for="answer3" class="answer2" id="a2">${preguntasFinal[index].answer3}</label>
                     <input type="radio" name="answer" id="answer3">
-                    <label for="answer4" class="answer3" id="a3">${quiz[index].answer4}</label>
+                    <label for="answer4" class="answer3" id="a3">${preguntasFinal[index].answer4}</label>
                     <input type="radio" name="answer" id="answer4">
                 </article>
             </article>
@@ -114,14 +328,14 @@ let section1 = `
         <div id="cronometro">00:00:00</div>
         <audio src="../Assets/Musica_Lobby.mp3" class="hide" autoplay loop controls>Audio not suported</audio>
     </section>`;
-main1.innerHTML = section1;
+main1.appendChild(section1);
 document.getElementById("testPage").appendChild(main1);
 
 // Mostrar sólo la primera pantalla
 const crono = document.getElementById("cronometro");
 crono.style.display = "none";
-const name = document.getElementById("name");
-name.style.display = "flex";
+const nombre = document.getElementById("nombre");
+nombre.style.display = "flex";
 const test = document.getElementById("test");
 test.style.display = "none";
 const end = document.getElementById("end");
@@ -159,7 +373,7 @@ button1.addEventListener("submit", function(event) {
         event.preventDefault();
         scoreArray.push(user);
         crono.style.display = "block";
-        name.style.display = "none";
+        nombre.style.display = "none";
         test.style.display = "flex";
         if (!intervalo) {
             tiempoInicio = Date.now();
@@ -176,7 +390,7 @@ let opcionUnica = true; //solo deja pulsar el botón una vez
 //función cambiar color
 function color() {
     for (let k = 0; k < labelAnswers.length; k++) {
-        if (labelAnswers[k].textContent == answers[index]) {
+        if (labelAnswers[k].textContent == respuestasFinal[index]) {
             document.getElementById(`a${k}`).classList.toggle(`answer${k}`);
             document.getElementById(`a${k}`).classList.toggle("green");
         } else {
@@ -221,14 +435,14 @@ for (let i = 0; i < labelAnswers.length; i++) {
                     clearInterval(intervalo);
                     intervalo = null;
                 } else {
-                    document.getElementById("title").textContent = `${quiz[index].label}`;
-                    document.getElementById("a0").textContent = `${quiz[index].answer1}`;
-                    document.getElementById("a1").textContent = `${quiz[index].answer2}`;
-                    document.getElementById("a2").textContent = `${quiz[index].answer3}`;
-                    document.getElementById("a3").textContent = `${quiz[index].answer4}`;
+                    document.getElementById("title").textContent = `${preguntasFinal[index].label}`;
+                    document.getElementById("a0").textContent = `${preguntasFinal[index].answer1}`;
+                    document.getElementById("a1").textContent = `${preguntasFinal[index].answer2}`;
+                    document.getElementById("a2").textContent = `${preguntasFinal[index].answer3}`;
+                    document.getElementById("a3").textContent = `${preguntasFinal[index].answer4}`;
                 }
             };
-            if (labelAnswers[i].textContent == answers[index]) {
+            if (labelAnswers[i].textContent == respuestasFinal[index]) {
                 score += 1;
             }
             setTimeout(after, 2000);

@@ -31,7 +31,11 @@ for (let i = 0; i < variableRecuperada.length; i++) {
 section2 += `
     </table>
     <audio src="../Assets/Musica_Lobby.mp3" class="hide" autoplay loop controls>Audio not suported</audio>
-</section>`;
+</section>
+<aside>
+    <a href="../index.html">Play again</a>
+    <p>New questions!</p>
+</aside>`;
 main2.innerHTML = section2;
 document.getElementById("solPage").appendChild(main2);
 
