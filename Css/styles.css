@@ -17,7 +17,7 @@ body {
     height: 100vh;
 }
 
-main {
+#mainIndex {
     width: 80%;
     height: 80%;
     background-color: #0076b651;
@@ -28,26 +28,212 @@ main {
     align-items: center;
 }
 
-section {
+#sectionIndex {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items:center;
 }
 
-h1 {
+#titleIndex {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5rem;
 }
 
-p {
+#pIndex {
     font-size: 1rem;
     color: white;
 }
 
-img {
+#aIndex img {
     width: 40%;
     margin: 0 30%;
+}
+#quiz {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nombre {
+    width: 80vw;
+    height: 80vh;
+    background-color: #0076b651;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+
+#titleQuiz {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.par {
+    font-size: 1rem;
+}
+
+#button {
+    font-size: 15px;
+    padding: 10px;
+    margin: 0 35%;
+}
+
+#parrafo {
+    color: #ef476f;
+    font-size: 15px;
+}
+
+#test {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titleContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+#title {
+    text-align: center;
+    z-index: 2;
+    margin-top: 20%;
+}
+
+#radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+#radio label {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#radio input {
+    display: none;
+}
+
+.answer0 {
+    background-color: #f58549;
+}
+
+.answer1 {
+    background-color: #ffca3a;
+}
+
+.answer2 {
+    background-color: #1982c4;
+}
+
+.answer3 {
+    background-color: #6a4c93;
+}
+
+.red {
+    background-color: #ef476f;
+}
+
+.green {
+    background-color: #06d6a0;
+}
+
+#end {
+    width: 80vw;
+    height: 80vh;
+    background-color: #0076b651;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center; 
+}
+
+#cronometro {
+    position: fixed;
+    padding: 10px 20px;
+    color: aliceblue;
+    background-color: rgb(90, 90, 90);
+    border-radius: 20px;
+    bottom: 2%;
+    right: 2%;
+    z-index: 1;
+}
+
+#sectionScore {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.score {
+    top: 100px;
+    text-align: center;
+}
+
+#imageFinal {
+    width: 40%;
+    margin: 0 30% 2% 30%;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    width: 40vw;
+    text-align: center;
+    background-color: dimgrey;
+    border: 1px solid black;
+}
+
+td {
+    width: 40vw;
+    text-align: center;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+aside {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#aScore {
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  background-color: #1a7b93;
+  font-size: 1rem;
 }
 
 .pointer {
@@ -58,20 +244,60 @@ img {
     visibility: hidden;
 }
 
-@media screen and (min-width: 500px) and (max-width: 750px) {
-  html {
-    font-size: 20px;
-  }  
-}
-
-@media screen and (min-width: 750px) and (max-width: 1000px) {
+@media screen and (min-width: 500px) and (max-width: 768px) {
     html {
-        font-size: 25px;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    html {
-        font-size: 30px;
-    }
-}
+      font-size: 20px;
+    }  
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1366px) {
+      html {
+          font-size: 25px;
+      }
+      #titleContainer {
+        height: 40vh;
+      }
+      #title {
+        margin-top: -10%;
+      }
+      #radio {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: -100px;
+      }
+      #radio label {
+        margin: 1%;
+        height: 15vh;
+        width: 40vw;
+      }
+      #cronometro {
+        bottom: 90%;
+        top: 2%;
+      }
+  }
+  
+  @media screen and (min-width: 1366px) {
+      html {
+          font-size: 30px;
+      }
+      #titleContainer {
+        height: 40vh;
+      }
+      #title {
+        margin-top: -10%;
+      }
+      #radio {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: -100px;
+      }
+      #radio label {
+        margin: 1%;
+        height: 20vh;
+        width: 40vw;
+      }
+      #cronometro {
+        bottom: 90%;
+        top: 2%;
+      }
+  }
