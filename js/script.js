@@ -261,7 +261,7 @@ if (document.title == "Geography Quiz") {
         <section id="sectionIndex">
             <h1 id="titleIndex">Geography Quiz</h1><br><br><br>
             <p id="pIndex">Click the button to start</p>
-            <a id="aIndex" href="./Pages/quiz.html"><img src="./assets/test-button.png" alt="button"></a>
+            <a id="aIndex" href="./pages/quiz.html"><img src="./assets/test-button.png" alt="button"></a>
             <audio src="./assets/Musica_Lobby.mp3" autoplay loop controls class="hide audio">Audio not suported</audio>    
         </section>
         <article>
