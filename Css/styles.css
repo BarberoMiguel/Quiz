@@ -236,6 +236,19 @@ aside {
   font-size: 1rem;
 }
 
+.mute {
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: #1a7b93;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+}
+
 .pointer {
     cursor: pointer;
 }

@@ -262,8 +262,11 @@ if (document.title == "Geography Quiz") {
             <h1 id="titleIndex">Geography Quiz</h1><br><br><br>
             <p id="pIndex">Click the button to start</p>
             <a id="aIndex" href="./Pages/quiz.html"><img src="./Assets/test-button.png" alt="button"></a>
-            <audio src="./Assets/Musica_Lobby.mp3" autoplay loop controls class="hide">Audio not suported</audio>    
-        </section>`;
+            <audio src="./Assets/Musica_Lobby.mp3" autoplay loop controls class="hide audio">Audio not suported</audio>    
+        </section>
+        <article>
+            <p class="mute">Mute</p>
+        </article>`;
     main.innerHTML = section;
     document.getElementById("home").appendChild(main);
     let button = document.querySelector("a");
@@ -272,7 +275,9 @@ if (document.title == "Geography Quiz") {
     });
     button.addEventListener("mouseout", function() {
         button.classList.remove("pointer");
-    }); 
+    });
+    var audio = document.getElementsByClassName("audio");
+    document.getElementsByClassName("mute")[0].addEventListener("click", function() {audio[0].muted = true;}); 
 }
 
 
@@ -289,7 +294,6 @@ if (document.title == "Geography Quiz1") {
         preguntasTemp.splice(num, 1);
         respuestasTemp.splice(num, 1);
     }
-
     //variables de uso interno
     var index = 0;
     var scoreArray = [];
@@ -350,8 +354,11 @@ if (document.title == "Geography Quiz1") {
                 </article>
             </form>
             <div id="cronometro">00:00:00</div>
-            <audio src="../Assets/Musica_Lobby.mp3" class="hide" autoplay loop controls>Audio not suported</audio>
-        </section>`;
+            <audio src="../Assets/Musica_Lobby.mp3" class="hide audio" autoplay loop controls>Audio not suported</audio>
+        </section>
+        <article>
+            <p class="mute">Mute</p>
+        </article>`;
     main1.appendChild(section1);
     document.getElementById("testPage").appendChild(main1);
 
@@ -498,8 +505,10 @@ if (document.title == "Geography Quiz1") {
         //guardo también la puntuación del último para felicitarle
         scoreArray = JSON.stringify(scoreArray);
         localStorage.setItem('lastUser', scoreArray);
-    }); 
-}
+    });
+    var audio = document.getElementsByClassName("audio");
+    document.getElementsByClassName("mute")[0].addEventListener("click", function() {audio[0].muted = true;});
+};
 
 
 if (document.title == "Geography Quiz2") {
@@ -535,12 +544,15 @@ if (document.title == "Geography Quiz2") {
     }
     section2 += `
         </table>
-        <audio src="../Assets/Musica_Lobby.mp3" class="hide" autoplay loop controls>Audio not suported</audio>
+        <audio  src="../Assets/Musica_Lobby.mp3" class="hide audio" autoplay loop controls>Audio not suported</audio>
     </section>
     <aside>
         <a href="../index.html" id="aScore">Play again</a>
         <p class="par">New questions!</p>
-    </aside>`;
+    </aside>
+    <article>
+        <p class="mute">Mute</p>
+    </article>`;
     main2.innerHTML = section2;
     document.getElementById("solPage").appendChild(main2);
 
@@ -569,7 +581,9 @@ if (document.title == "Geography Quiz2") {
             break;
         default:
             break;
-    } 
+    };
+    var audio = document.getElementsByClassName("audio");
+    document.getElementsByClassName("mute")[0].addEventListener("click", function() {audio[0].muted = true;});
 }
 
 
