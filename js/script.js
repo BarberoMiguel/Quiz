@@ -269,15 +269,17 @@ if (document.title == "Geography Quiz") {
         </article>`;
     main.innerHTML = section;
     document.getElementById("home").appendChild(main);
+
+    //agrego efectos al botón
     let button = document.querySelector("a");
-    button.addEventListener("mouseover", function() {
-        button.classList.add("pointer");
+    function redirigir() {
+        window.location.href = button.href;
+    }
+    button.addEventListener("click", function(event) {
+        event.preventDefault();
+        setTimeout(redirigir, 1500);
+        document.getElementById("mainIndex").style.animation = "DesplazarAbajo 2s ease-in-out";
     });
-    button.addEventListener("mouseout", function() {
-        button.classList.remove("pointer");
-    });
-    var audio = document.getElementsByClassName("audio");
-    document.getElementsByClassName("mute")[0].addEventListener("click", function() {audio[0].muted = true;}); 
 }
 
 
@@ -403,13 +405,18 @@ if (document.title == "Geography Quiz1") {
         } else {
             event.preventDefault();
             scoreArray.push(user);
-            crono.style.display = "block";
-            nombre.style.display = "none";
-            test.style.display = "flex";
-            if (!intervalo) {
-                tiempoInicio = Date.now();
-                intervalo = setInterval(actualizarCronometro, 1000);
-                }
+            document.getElementById("nombre").style.animation = "DesplazarAbajo 2s ease-in-out";
+            function pasarPagina() {
+                crono.style.display = "block";
+                nombre.style.display = "none";
+                test.style.display = "flex";
+                if (!intervalo) {
+                    tiempoInicio = Date.now();
+                    intervalo = setInterval(actualizarCronometro, 1000);
+                    };
+                document.getElementById("test").style.animation = "aparecerYDerecha 1s ease-in-out";
+            }
+            setTimeout(pasarPagina, 1500);
         };
     });
 
@@ -435,48 +442,51 @@ if (document.title == "Geography Quiz1") {
     //añadir botones que checkeen los radio
     //inhabilitar las opciones durante 2 segundos para que no se pueda cambiar
     //cambiar los colores para mostrar la respuesta correcta    
-    for (let i = 0; i < labelAnswers.length; i++) {
-        labelAnswers[i].addEventListener("mouseover", function() {
-            labelAnswers[i].classList.add("pointer");
-        });
-        labelAnswers[i].addEventListener("mouseout", function() {
-            labelAnswers[i].classList.remove("pointer");
-        });
-        labelAnswers[i].addEventListener("click", function(event) {
+    for (let h = 0; h < labelAnswers.length; h++) {
+        labelAnswers[h].addEventListener("click", function(event) {
             if (opcionUnica) {
                 opcionUnica= false;
-                inputAnswers[i].checked = true;
+                inputAnswers[h].checked = true;
                 color();
                 for (let j = 0; j < inputAnswers.length; j++) {
                     inputAnswers[j].disabled = true;
                 }
                 function after() {
-                    inputAnswers[i].checked = false;
+                    inputAnswers[h].checked = false;
                     color();
                     opcionUnica = true;
                     for (let j = 0; j < inputAnswers.length; j++) {
                         inputAnswers[j].disabled = false;
                     };
                     index += 1;
+                    test.style.animation = "DesplazarDerecha 1s ease-in-out";
                     if (index == 10) {
-                        //mostrar siguiente pantalla
-                        test.style.display = "none";
-                        end.style.display = "flex";
                         //parar cronometro
                         clearInterval(intervalo);
                         intervalo = null;
+                        setTimeout(function() {
+                            //mostrar siguiente pantalla
+                            test.style.display = "none";
+                            end.style.display = "flex";
+                            end.style.animation = "aparecerYDesplazar 2s ease-in-out";
+                        }, 750);
+                        
                     } else {
-                        document.getElementById("title").textContent = `${preguntasFinal[index].label}`;
-                        document.getElementById("a0").textContent = `${preguntasFinal[index].answer1}`;
-                        document.getElementById("a1").textContent = `${preguntasFinal[index].answer2}`;
-                        document.getElementById("a2").textContent = `${preguntasFinal[index].answer3}`;
-                        document.getElementById("a3").textContent = `${preguntasFinal[index].answer4}`;
+                        setTimeout(function() {
+                            document.getElementById("title").textContent = `${preguntasFinal[index].label}`;
+                            document.getElementById("a0").textContent = `${preguntasFinal[index].answer1}`;
+                            document.getElementById("a1").textContent = `${preguntasFinal[index].answer2}`;
+                            document.getElementById("a2").textContent = `${preguntasFinal[index].answer3}`;
+                            document.getElementById("a3").textContent = `${preguntasFinal[index].answer4}`;
+                            test.style.animation = "aparecerYDerecha 1s ease-in-out";
+                        }, 750);
+                        
                     }
                 };
-                if (labelAnswers[i].textContent == respuestasFinal[index]) {
+                if (labelAnswers[h].textContent == respuestasFinal[index]) {
                     score += 1;
                 }
-                setTimeout(after, 2000);
+                setTimeout(after, 1000);
             }
             
         });
@@ -485,6 +495,7 @@ if (document.title == "Geography Quiz1") {
     var control = false;
     let formTest = document.getElementById("formTest");
     formTest.addEventListener("submit", function(event) {
+        event.preventDefault();
         //recupero el scoreBoard
         let variableRecuperada = localStorage.getItem("scoreBoard");
         if (variableRecuperada == null) {
@@ -505,9 +516,14 @@ if (document.title == "Geography Quiz1") {
         //guardo también la puntuación del último para felicitarle
         scoreArray = JSON.stringify(scoreArray);
         localStorage.setItem('lastUser', scoreArray);
+
+        //retrasar para animación y redirigir
+        function redirigir() {
+            window.location.href = formTest.action;
+        }
+        end.style.animation = "DesplazarAbajo 2s ease-in-out";
+        setTimeout(redirigir, 1500);
     });
-    var audio = document.getElementsByClassName("audio");
-    document.getElementsByClassName("mute")[0].addEventListener("click", function() {audio[0].muted = true;});
 };
 
 
@@ -528,24 +544,36 @@ if (document.title == "Geography Quiz2") {
         <h2 class="score">Your score is: ${score} / 10</h2>
         <p id="result">Perfect!!</p>
         <img src="../assets/10-.png" alt="image" id="imageFinal">
-
-        <h2>ScoreBoard</h2>
-        <table>
-            <tr>
-            <th>Name</th> 
-            <th>Score</th>
-            </tr>`;
+        <section id="scoreBoard">
+            <h2>ScoreBoard</h2>
+            <table>
+                <tr>
+                <th>Name</th> 
+                <th>Score</th>
+                </tr>`;
     for (let i = 0; i < variableRecuperada.length; i++) {
-        section2 += `
-            <tr>
-                <td>${variableRecuperada[i][0]}</td>
-                <td>${variableRecuperada[i][1]}</td>
-            </tr>`;  
-    }
+        if (i % 2 == 1) {
+            section2 += `
+                <tr>
+                    <td class="darker">${variableRecuperada[i][0]}</td>
+                    <td class="darker">${variableRecuperada[i][1]}</td>
+                </tr>`;
+        } else {
+            section2 += `
+                <tr>
+                    <td>${variableRecuperada[i][0]}</td>
+                    <td>${variableRecuperada[i][1]}</td>
+                </tr>`;
+        }   
+    };
     section2 += `
-        </table>
+            </table>
+        </section>
         <audio  src="../assets/Musica_Lobby.mp3" class="hide audio" autoplay loop controls>Audio not suported</audio>
+        <p></p>
+        <p>How well did you do?</p>
     </section>
+    
     <aside>
         <a href="../index.html" id="aScore">Play again</a>
         <p class="par">New questions!</p>
@@ -582,10 +610,14 @@ if (document.title == "Geography Quiz2") {
         default:
             break;
     };
-    var audio = document.getElementsByClassName("audio");
-    document.getElementsByClassName("mute")[0].addEventListener("click", function() {audio[0].muted = true;});
 }
 
-
-
+let audio = document.getElementsByClassName("audio");
+let mute = document.getElementsByClassName("mute");
+mute[0].addEventListener("click", function() {
+    if (audio[0].muted == true) {
+        audio[0].muted = false;
+    } else {
+        audio[0].muted = true;
+    };}); 
 

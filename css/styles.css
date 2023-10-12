@@ -7,8 +7,65 @@ html {
     font-size: 15px;
 }
 
+@keyframes aparecerYDesplazar {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes DesplazarAbajo {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+}
+
+@keyframes aparecerYDerecha {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes DesplazarDerecha {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+}
+
+@keyframes Glow {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+      }
+}
+
 body {
-    background: -webkit-linear-gradient(-45deg, #219ebc, #8ecae6);
+    background: url(../assets/fondo.jpg);
+    background-size: cover;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -18,8 +75,9 @@ body {
 }
 
 #mainIndex {
-    width: 80%;
-    height: 80%;
+    animation: aparecerYDesplazar 2s ease-in-out;
+    width: 80vw;
+    height: 80vh;
     background-color: #0076b651;
     border: 2px solid white;
     border-radius: 20px;
@@ -36,7 +94,8 @@ body {
 }
 
 #titleIndex {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5rem;
 }
 
@@ -58,6 +117,7 @@ body {
 }
 
 #nombre {
+    animation: aparecerYDesplazar 2s ease-in-out;
     width: 80vw;
     height: 80vh;
     background-color: #0076b651;
@@ -70,8 +130,13 @@ body {
 }
 
 #titleQuiz {
+    color: aliceblue;
     font-size: 1.5rem;
     text-align: center;
+}
+
+label[for="user"] {
+    color: aliceblue;
 }
 
 .par {
@@ -79,9 +144,16 @@ body {
 }
 
 .button {
+    color: aliceblue;
+    background-color: #1982c4;
     font-size: 15px;
     padding: 10px;
     margin: 0 35%;
+    border-radius: 50%;
+}
+
+.button:hover {
+    cursor: pointer;
 }
 
 #parrafo {
@@ -107,6 +179,7 @@ body {
 }
 
 #title {
+    color: aliceblue;
     text-align: center;
     z-index: 2;
     margin-top: 20%;
@@ -126,6 +199,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#radio label:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 #radio input {
@@ -157,6 +235,7 @@ body {
 }
 
 #end {
+    color: aliceblue;
     width: 80vw;
     height: 80vh;
     background-color: #0076b651;
@@ -180,6 +259,8 @@ body {
 }
 
 #sectionScore {
+    color: aliceblue;
+    animation: aparecerYDesplazar 2s ease-in-out;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -191,12 +272,21 @@ body {
     text-align: center;
 }
 
+#scoreBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: Glow 2s ease-in-out infinite;
+    margin: 0 0 10% 0;
+}
+
 #imageFinal {
     width: 40%;
     margin: 0 30% 2% 30%;
 }
 
 table {
+    color: black;
     display: flex;
     justify-content: center;
     border: 2px solid black;
@@ -215,6 +305,10 @@ td {
     text-align: center;
     background-color: beige;
     border: 1px solid black;
+}
+
+.darker {
+    background-color: rgb(189, 189, 169);
 }
 
 aside {
@@ -249,7 +343,7 @@ aside {
     left: 2%;
 }
 
-.pointer {
+.mute:hover {
     cursor: pointer;
 }
 
